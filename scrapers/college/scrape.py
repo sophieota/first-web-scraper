@@ -11,6 +11,8 @@ url = urlp1 + str(year)
 response = requests.get(url)
 html = response.content
 
+for x in year.findAll('table')
+
 soup = BeautifulSoup(html)
 table = soup.find('table')
 
