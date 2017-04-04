@@ -20,10 +20,9 @@ for month in months:
         list_of_cells = []
         list_of_cells.append(month)
         for cell in row.findAll('td'):
+        	if cell.text == 'a':
+    			list_of_cells.append
             list_of_cells.append(cell.text.encode('utf-8'))
-        list_of_rows.append(list_of_cells)
-        for cell in row.findAll('a href'):
-        	list_of_cells.append(cell.text.encode('utf-8'))
         list_of_rows.append(list_of_cells) 
         
 outfile = open("transactions.csv", "wb")
